@@ -1,0 +1,390 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-10T13:58:08.078Z",
+  "hero": {
+    "availability": "OPEN TO OPPORTUNITIES & COLLABORATION",
+    "role": "Software Developer · Digital Operations · Educator",
+    "firstName": "Anthony",
+    "lastName": "Ozioko.",
+    "statement": [
+      "I build things",
+      "that move people",
+      "and make life better."
+    ],
+    "description": "Hello, I'm Anthony. I bring technology, thoughtful design and practical problem-solving together to create useful digital experiences.",
+    "photo": "/anthony-profile.jpg",
+    "primaryCta": {
+      "label": "Explore my work",
+      "href": "#projects"
+    },
+    "secondaryCta": {
+      "label": "Download CV",
+      "href": "/Anthony-Ozioko-CV.pdf"
+    },
+    "scrollLabel": "SCROLL TO DISCOVER",
+    "marquee": [
+      [
+        "Software",
+        "Development"
+      ],
+      [
+        "Digital",
+        "Operations"
+      ],
+      [
+        "Product",
+        "Thinking"
+      ],
+      [
+        "People",
+        "First"
+      ]
+    ]
+  },
+  "about": {
+    "kicker": "01 / ABOUT ME",
+    "overline": "A little about my journey",
+    "heading": {
+      "text": "Curiosity turned into a",
+      "accent": "career of creating.",
+      "break": true
+    },
+    "lead": "I’m a technology professional who enjoys turning real-world challenges into useful digital solutions.",
+    "paragraphs": [
+      "My work sits at the intersection of software development, IT operations, education technology and digital product delivery. I enjoy building applications, improving workflows, supporting people with technology and helping ideas move from concept to something useful.",
+      "From educational platforms and digital administration to backend systems and product concepts, I believe good technology should be reliable, accessible and built around the people who use it."
+    ],
+    "linkLabel": "Let's create something meaningful",
+    "values": [
+      {
+        "id": "v1",
+        "title": "Purposeful building",
+        "text": "I care about solving the right problem, not just writing code."
+      },
+      {
+        "id": "v2",
+        "title": "Practical experience",
+        "text": "I connect technology with real operational and user needs."
+      },
+      {
+        "id": "v3",
+        "title": "Always learning",
+        "text": "I keep growing through hands-on projects, teaching and collaboration."
+      }
+    ]
+  },
+  "skills": {
+    "kicker": "02 / WHAT I WORK WITH",
+    "overline": "My toolkit",
+    "heading": {
+      "text": "Skills that turn ideas",
+      "accent": "into outcomes.",
+      "break": true
+    },
+    "note": "A growing mix of engineering, operations and product skills — applied with care and a focus on getting things done.",
+    "groups": [
+      {
+        "id": "software",
+        "title": "Software development",
+        "items": [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Node.js",
+          "NestJS",
+          "Vue.js",
+          "FastAPI",
+          "Django",
+          "HTML & CSS",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "id": "data",
+        "title": "Data & backend",
+        "items": [
+          "PostgreSQL",
+          "MySQL",
+          "SQLAlchemy",
+          "REST APIs",
+          "ChromaDB",
+          "Webhooks",
+          "Authentication",
+          "Document processing"
+        ]
+      },
+      {
+        "id": "it",
+        "title": "IT & digital operations",
+        "items": [
+          "Technical support",
+          "System troubleshooting",
+          "Digital administration",
+          "Microsoft Office",
+          "Computer training",
+          "Workflow improvement"
+        ]
+      },
+      {
+        "id": "product",
+        "title": "Product & delivery",
+        "items": [
+          "Product management",
+          "Program management",
+          "Project design",
+          "Requirements gathering",
+          "Documentation",
+          "Stakeholder coordination"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "kicker": "03 / SELECTED WORK",
+    "overline": "Things I've worked on",
+    "heading": {
+      "text": "Ideas made",
+      "accent": "practical.",
+      "break": false
+    },
+    "note": "A selection of applications, product concepts and digital solutions across education, operations and everyday life.",
+    "footerNote": "Some projects are still being developed or documented. Public repository and live-demo links will be added as they become available.",
+    "items": [
+      {
+        "id": "kinderfair",
+        "name": "Kinderfair",
+        "type": "Youth social platform",
+        "desc": "A social media app built for children and teens — an age-appropriate space to connect, share and be creative, designed around privacy, safety and wellbeing.",
+        "stack": [
+          "React",
+          "TypeScript",
+          "FastAPI",
+          "PostgreSQL"
+        ],
+        "icon": "✿",
+        "status": "In development",
+        "url": "",
+        "image": ""
+      },
+      {
+        "id": "student-guide",
+        "name": "Student-Guide",
+        "type": "Education technology",
+        "desc": "An educational document platform designed to help learners interact with PDFs and learning materials through document processing, retrieval and AI-assisted question answering.",
+        "stack": [
+          "Python",
+          "FastAPI",
+          "React",
+          "TypeScript",
+          "ChromaDB"
+        ],
+        "icon": "✦",
+        "status": "In development",
+        "url": "",
+        "image": ""
+      },
+      {
+        "id": "givenaija",
+        "name": "GiveNaija",
+        "type": "NGO & donation operations",
+        "desc": "A donation and member-management platform concept focused on campaign operations, financial accountability, audit trails and transparent records.",
+        "stack": [
+          "Python",
+          "PostgreSQL",
+          "APIs",
+          "Webhooks",
+          "SSE"
+        ],
+        "icon": "♡",
+        "status": "In development",
+        "url": "",
+        "image": ""
+      },
+      {
+        "id": "iya-ngozi",
+        "name": "Iya Ngozi’s Kitchen",
+        "type": "Ordering & operations",
+        "desc": "A kitchen ordering backend with menu management, customer orders, staff workflows, authentication and order-status tracking.",
+        "stack": [
+          "FastAPI",
+          "SQLAlchemy",
+          "Python",
+          "Sessions"
+        ],
+        "icon": "⌂",
+        "status": "GitHub repository",
+        "url": "https://github.com/OziokoAnthony/kitchen-site",
+        "image": ""
+      },
+      {
+        "id": "carekin",
+        "name": "CareKin",
+        "type": "Health-access product concept",
+        "desc": "A patient-centred health-access experience designed around crisis support, verified facilities, caregiver access and a protected health passport.",
+        "stack": [
+          "React",
+          "Product design",
+          "UX",
+          "PRD"
+        ],
+        "icon": "✚",
+        "status": "Product concept",
+        "url": "",
+        "image": ""
+      },
+      {
+        "id": "cbt",
+        "name": "CBT Examination Platform",
+        "type": "Education technology",
+        "desc": "A computer-based testing experience with student login, timed examinations, objective and theory assessments, and digital result reporting.",
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "MySQL"
+        ],
+        "icon": "◈",
+        "status": "Project showcase",
+        "url": "",
+        "image": ""
+      },
+      {
+        "id": "smartcalc",
+        "name": "SmartCalc",
+        "type": "Web application",
+        "desc": "A responsive calculator project built as a practical exercise in clean interface design and core frontend development.",
+        "stack": [
+          "JavaScript",
+          "HTML",
+          "Tailwind CSS"
+        ],
+        "icon": "＋",
+        "status": "Project showcase",
+        "url": "",
+        "image": ""
+      },
+      {
+        "id": "africaplan",
+        "name": "AfricaPlan",
+        "type": "Web application",
+        "desc": "A planning-focused web application concept developed as part of practical software engineering and web development work.",
+        "stack": [
+          "Python",
+          "Django",
+          "JavaScript"
+        ],
+        "icon": "◎",
+        "status": "Project showcase",
+        "url": "",
+        "image": ""
+      },
+      {
+        "id": "coffee-shop",
+        "name": "Coffee Shop Application",
+        "type": "Frontend application",
+        "desc": "A modern coffee-shop interface built to practise component-based frontend development and state-driven user experiences.",
+        "stack": [
+          "React",
+          "Vite",
+          "Zustand",
+          "TypeScript"
+        ],
+        "icon": "☕",
+        "status": "Project showcase",
+        "url": "",
+        "image": ""
+      }
+    ]
+  },
+  "experience": {
+    "kicker": "04 / EXPERIENCE & LEARNING",
+    "overline": "Where I've contributed",
+    "heading": {
+      "text": "Experience with a",
+      "accent": "human touch.",
+      "break": false
+    },
+    "note": "Working with people, systems and digital tools to make everyday processes better.",
+    "items": [
+      {
+        "id": "ddl",
+        "org": "Daughters of Divine Love Congregation",
+        "role": "Digital & Operations Officer / Computer Science Teacher",
+        "desc": "Supporting school technology, digital administration, JAMB/WAEC/NECO registration workflows, ICT instruction and computer-based testing."
+      },
+      {
+        "id": "eye-specialists",
+        "org": "The Eye Specialists’ Hospital",
+        "role": "Digital Operations Personnel",
+        "desc": "Supporting digital operations, administrative technology, records and day-to-day user assistance."
+      },
+      {
+        "id": "love-fm",
+        "org": "Love FM Radio Station, Milky Hill Ngwo",
+        "role": "Digital Marketer / Digital Operations",
+        "desc": "Supporting online visibility, digital communication, content distribution and audience engagement."
+      },
+      {
+        "id": "arkland",
+        "org": "Arkland Digital Enterprise",
+        "role": "Computer Operator & Trainer",
+        "desc": "Computer operations, user support and practical digital skills training."
+      }
+    ],
+    "certificates": {
+      "overline": "Continued learning",
+      "heading": {
+        "text": "Learning, growing",
+        "accent": "and moving forward.",
+        "break": true
+      },
+      "items": [
+        "AWS Level 5 CPE Certification",
+        "Software Engineer (FullStack) Certificate",
+        "Program Management & Product Design",
+        "Global Mentorship Initiative",
+        "ALX Software Engineering Programme",
+        "Google Digital Skills for Africa",
+        "Microsoft Office & Computer Proficiency"
+      ]
+    }
+  },
+  "services": {
+    "kicker": "05 / HOW I CAN HELP",
+    "heading": {
+      "text": "Good people. Clear ideas.",
+      "accent": "Useful technology.",
+      "break": true
+    },
+    "items": [
+      "Web & Software Development",
+      "IT Operations & Technical Support",
+      "Digital Administration",
+      "Computer & ICT Training",
+      "Product & Project Coordination",
+      "Digital Content & Marketing"
+    ]
+  },
+  "contact": {
+    "kicker": "06 / LET'S CONNECT",
+    "overline": "Have an idea, opportunity or project?",
+    "heading": {
+      "text": "Let's make something",
+      "accent": "that matters.",
+      "break": true
+    },
+    "copy": "I’m always happy to connect with thoughtful people, teams and organisations working on meaningful ideas.",
+    "email": "oziokoanthony@gmail.com",
+    "whatsapp": "2349037191117",
+    "whatsappDisplay": "0903 719 1117",
+    "github": "https://github.com/OziokoAnthony",
+    "cv": "/Anthony-Ozioko-CV.pdf",
+    "buttonLabel": "Start a conversation"
+  },
+  "footer": {
+    "tagline": "Designed with care. Built with purpose.",
+    "name": "Anthony Ozioko"
+  }
+}

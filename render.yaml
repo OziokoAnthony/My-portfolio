@@ -1,0 +1,37 @@
+# Render blueprint — https://render.com/docs/blueprint-spec
+#
+# Create the service with: Render Dashboard → New → Blueprint → pick this repo.
+# Render reads this file and sets up the build, start command, disk and env vars.
+
+services:
+  - type: web
+    name: anthony-ozioko-portfolio
+    runtime: node
+    plan: starter
+    region: frankfurt
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MAX_UPLOAD_MB
+        value: "8"
+      # Must match the disk mountPath below. Changing one without the other
+      # means edits and uploads stop surviving deploys.
+      - key: DATA_DIR
+        value: /opt/render/project/src/server/data
+      # Set in the dashboard when Render asks. Never commit it.
+      - key: ADMIN_PASSWORD
+        sync: false
+      # Render generates a long random value once and keeps it stable.
+      - key: JWT_SECRET
+        generateValue: true
+
+    disk:
+      name: portfolio-data
+      mountPath: /opt/render/project/src/server/data
+      sizeGB: 1
