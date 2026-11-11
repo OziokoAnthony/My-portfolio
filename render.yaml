@@ -15,6 +15,12 @@ services:
     healthCheckPath: /api/health
     autoDeploy: true
 
+    # Custom domain. Render starts serving it as soon as DNS points here and
+    # issues the TLS certificate automatically.
+    domains:
+      - talk2oziokoanthony.space
+      - www.talk2oziokoanthony.space
+
     envVars:
       - key: NODE_ENV
         value: production

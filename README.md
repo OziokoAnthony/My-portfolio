@@ -133,14 +133,15 @@ On first boot the server copies `src/content.json` into the data directory, so w
 
 ### Custom domain
 
-1. In Render: your service → **Settings → Custom Domains → Add Custom Domain**.
-2. Enter the domain, e.g. `anthonyozioko.com` and `www.anthonyozioko.com`.
-3. Render shows the DNS records to create. At your registrar, add:
+`render.yaml` already declares **`talk2oziokoanthony.space`** and `www.talk2oziokoanthony.space`, so Render adds both automatically when the blueprint is applied. You only need to point DNS at Render:
+
+1. Render → your service → **Settings → Custom Domains** → copy the records it shows.
+2. At your registrar (or Cloudflare, if you moved DNS there), add:
    - `A` record for `@` → the IP Render shows
    - `CNAME` record for `www` → `<your-service>.onrender.com`
-4. Wait for DNS (minutes to a few hours). Render issues a free TLS certificate automatically once it verifies the records.
+3. Wait for DNS (minutes to a few hours). Render issues a free TLS certificate automatically once it verifies the records.
 
-Use your registrar's DNS panel (or Cloudflare) — don't use "URL forwarding", which breaks the admin cookie.
+Don't use your registrar's "URL forwarding" — it breaks the admin session cookie. And if you put Cloudflare's proxy in front (orange cloud), set SSL mode to **Full (strict)** and add `TRUST_PROXY=2` to the service's env vars.
 
 If you deploy the API separately from a static host, set `API_URL` when building the frontend and point your host's proxy at the API for `/api` and `/uploads`.
 
