@@ -30,6 +30,9 @@ services:
       # Render generates a long random value once and keeps it stable.
       - key: JWT_SECRET
         generateValue: true
+      # Only needed if you put Cloudflare in front of your custom domain:
+      # - key: TRUST_PROXY
+      #   value: "2"
 
     disk:
       name: portfolio-data

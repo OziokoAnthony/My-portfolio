@@ -81,6 +81,7 @@ cp .env.example .env
 | `NODE_ENV` | Set to `production` when deployed. Enables secure cookies, so the site must be served over HTTPS. |
 | `MAX_UPLOAD_MB` | Maximum upload size (default `8`). |
 | `DATA_DIR` | Where `content.json`, `uploads/` and `backups/` live. Defaults to `server/data`. Point it at your host's persistent disk. |
+| `TRUST_PROXY` | How many proxies sit in front of the app. Defaults to `1` in production (Render). Set to `2` if you add Cloudflare. |
 
 Generate a secret with:
 

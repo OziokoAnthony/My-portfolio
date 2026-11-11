@@ -161,8 +161,11 @@ const upload = multer({
 const app = express();
 app.disable('x-powered-by');
 /* Hosts like Render terminate TLS at their proxy: trust one hop so req.ip is the
-   real visitor (rate limiting) and req.protocol reports https (secure cookies). */
-if (IS_PROD) app.set('trust proxy', 1);
+   real visitor (rate limiting) and req.protocol reports https (secure cookies).
+   Set TRUST_PROXY=2 when another proxy (e.g. Cloudflare) sits in front. */
+const TRUST_PROXY_RAW = (process.env.TRUST_PROXY || '').trim();
+const TRUST_PROXY = TRUST_PROXY_RAW ? Number(TRUST_PROXY_RAW) : (IS_PROD ? 1 : 0);
+if (Number.isFinite(TRUST_PROXY) && TRUST_PROXY > 0) app.set('trust proxy', TRUST_PROXY);
 app.use(express.json({ limit: '4mb' }));
 app.use(cookieParser());
 app.use('/uploads', express.static(UPLOAD_DIR, { maxAge: '7d', fallthrough: false }));
